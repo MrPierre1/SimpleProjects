@@ -1,0 +1,55 @@
+a.link:hover {
+  text-decoration: none;
+  /*   display: block; */
+  /*   color: blue; */
+}
+
+.input-group {
+  margin: 3% 40%;
+  width: 30%;
+  margin-top: 1%;
+}
+
+body {
+  background-color: deepskyblue;
+}
+
+.list-group-item:hover {
+  border-left: 15px solid red;
+  border-right: 15px solid red;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+}
+
+p {
+  color: #333;
+}
+
+h2 {
+  margin: 20px 38%;
+  color: deeppink;
+}
+
+.container {
+  margin-top: -40px;
+}
+
+.desc {
+  font-size: 18px;
+  color: #333;
+}
+
+#srch-term {
+  font-size: 18px;
+}
+
+.random {
+  font-size: 24px;
+  color: #333;
+  margin: 0% 41%;
+  /*   margin-top:40px; */
+}

@@ -1,0 +1,47 @@
+p,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 2px 2px 8px #ff0000;
+}
+
+#driver {
+  margin-top: 1.5%;
+  margin-left: 65%;
+  color: white;
+  /*   background-color: white; */
+  height: 40px;
+  width: 9%;
+  font-size: 20px;
+}
+
+.qContainer {
+  margin: -5% 25%;
+  margin-top: 1%;
+  /*   height: 200px; */
+  width: 50%;
+  border: 5px solid red;
+  background-color: #333;
+  z-index: 100;
+  padding-bottom: 5%;
+}
+
+p {
+  color: white;
+  font-size: 25px;
+  font-family: "sans serif";
+}
+
+.btn-lg {
+  margin-left: -48%;
+  margin-top: -10px;
+  color: red;
+  /*   float:left; */
+}
+
+a:hover {
+  /*   color:red; */
+  background-color: red;
+}

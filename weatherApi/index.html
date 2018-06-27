@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather API</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div ng-app="myApp" ng-controller="weatherCtrl">
+		<h1>Weather App</h1>
+		<div class="container-fluid">
+			<div class="container-fluid qContainer">
+				<p class="city">{{city}},{{country}}</p>
+				<p class="temp">{{temp}}
+					<a href="" ng-click="changeCtoFTemp()" ng-show="isCelsius">&#176;C</a>
+					<a href="" ng-click="changeFtoCTemp()" ng-show="isFarenheit">&#176;F</a>
+				</p>
+				<p class="desc">{{description}}</p>
+				<span class="icon">
+					<img alt="" ng-src="http://openweathermap.org/img/w/{{icon}}.png">
+				</span>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js">
+	</script>
+	<script src="index.js">
+	</script>
+</body>
+
+</html>

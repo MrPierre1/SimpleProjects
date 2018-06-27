@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WikiViewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="wikiCtrl">
+        <a class="random" ng-href="https://en.wikipedia.org/wiki/{{word}}" ng-mouseover="getRandom()">Wiki Viewer</a>
+        <form class="navbar-form" role="search">
+            <div class="input-group add-on">
+                <input class="form-control" id="srch-term" name="srch-term" ng-model="search" placeholder="Type a Search String & Click Search Icon"
+                    type="text">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" ng-click="runIt()" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <h2 ng-hide="myValue">Click on a row</h2>
+            <div class="list-group" ng-repeat="result in resultsArray" style="margin-left: 2em">
+                <a class="link" ng-href="https://en.wikipedia.org/wiki/{{result.title}}">
+                    <ul>
+                        <li class="list-group-item">
+                            <p class="title">{{result.title}}</p>
+                            <p class="desc">{{ result.description }}</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

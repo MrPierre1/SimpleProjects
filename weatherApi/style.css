@@ -1,0 +1,47 @@
+body {
+  background-color: slategray;
+  color: white;
+}
+
+p,
+city,
+h1 {
+  text-align: center;
+  margin-top: 29px;
+}
+
+.city {
+  margin: 30px;
+  font-size: 32px;
+}
+
+.temp {
+  margin: 10px;
+  font-size: 32px;
+}
+
+.desc {
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.icon {
+  margin: 48.5%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 29px;
+  font-size: 50px;
+}
+
+a {
+  color: midnightblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cornflowerblue;
+  text-decoration: none;
+}
